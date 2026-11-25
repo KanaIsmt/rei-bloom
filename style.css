@@ -1,0 +1,138 @@
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:#1F1C1D;font-family:'Zen Kaku Gothic New',sans-serif;font-size:16px;line-height:1.9;letter-spacing:.06em}
+img{max-width:100%}
+a{color:#8A4D72}
+a:hover{color:#6B3857}
+.serif,h1,h2,.nav-serif{font-family:'Shippori Mincho',serif}
+
+/* header */
+.site-header{border-bottom:1px solid #EFE6EC;background:#fff;position:sticky;top:0;z-index:10}
+.header-inner{max-width:1160px;margin:0 auto;padding:12px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.logo-link{display:inline-flex;align-items:center;min-height:44px}
+.logo-header{height:56px;width:auto;display:block}
+.main-nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 26px;font-family:'Shippori Mincho',serif;font-size:14px;letter-spacing:.12em}
+.main-nav a{color:#1F1C1D;text-decoration:none}
+.main-nav a:hover{color:#8A4D72}
+.main-nav .nav-cta{display:inline-flex;align-items:center;min-height:44px;padding:0 22px;border-radius:999px;background:#8A4D72;color:#fff}
+.main-nav .nav-cta:hover{background:#6B3857;color:#fff}
+section[id]{scroll-margin-top:90px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;letter-spacing:.14em;border-radius:999px;min-height:52px}
+.btn-primary{padding:0 34px;background:#8A4D72;color:#fff}
+.btn-primary:hover{background:#6B3857;color:#fff}
+.btn-outline{padding:0 30px;border:1px solid #8A4D72;color:#8A4D72}
+.btn-outline:hover{background:#F8F3F6}
+.btn-large{min-height:56px;padding:0 44px}
+
+/* hero */
+.hero{padding:72px 24px 88px;background:#fff;overflow:hidden}
+.hero-inner{max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:56px}
+.hero-message{flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:22px}
+.eyebrow{margin:0;font-family:'Shippori Mincho',serif;font-size:13px;letter-spacing:.24em;color:#8A4D72}
+.hero h1{margin:0;font-weight:600;font-size:44px;line-height:1.6;letter-spacing:.24em}
+.hero-sub{margin:0;font-family:'Shippori Mincho',serif;font-size:17px;letter-spacing:.16em;color:#5B5458}
+.hero-text{margin:0;font-size:15px;line-height:2;color:#3A3436}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+
+/* carousel */
+.carousel{flex:1 1 460px;min-width:0;display:flex;flex-direction:column;gap:16px}
+.carousel-frame{position:relative;width:100%;aspect-ratio:4/3;border-radius:28px;overflow:hidden;background:#F8F3F6}
+.slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease}
+.slide.is-active{opacity:1}
+.carousel-tag{position:absolute;left:18px;top:18px;padding:4px 14px;border-radius:999px;background:rgba(255,255,255,.92);font-size:12px;color:#8A4D72}
+.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.85);color:#8A4D72;font-size:20px;cursor:pointer}
+.carousel-btn:hover{background:#fff}
+.carousel-prev{left:12px}
+.carousel-next{right:12px}
+.carousel-caption{min-height:150px;display:flex;flex-direction:column;gap:6px;padding:0 6px}
+.carousel-caption p{margin:0}
+.carousel-no{font-size:12px;letter-spacing:.2em;color:#8A4D72}
+.carousel-title{font-family:'Shippori Mincho',serif;font-size:20px;letter-spacing:.12em}
+.carousel-text{font-size:14px;line-height:1.9;color:#3A3436}
+.carousel-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 6px;flex-wrap:wrap}
+.carousel-foot a{font-size:13px}
+.carousel-dots{display:flex;gap:6px}
+.carousel-dots button{width:10px;height:10px;border:0;padding:0;border-radius:999px;cursor:pointer;transition:width .4s;background:#E4D3DE}
+.carousel-dots button.is-active{width:28px;background:#8A4D72}
+.carousel-note{margin:0;padding:0 6px;font-size:11px;color:#6E6469}
+
+/* sections */
+.section{padding:104px 24px}
+.section-tint{background:#F8F3F6}
+.container{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:44px}
+.container-narrow{max-width:1000px;gap:36px}
+.section-title{margin:0;text-align:center;font-family:'Shippori Mincho',serif;font-weight:600;font-size:28px;letter-spacing:.2em}
+
+/* cards */
+.cards{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:20px}
+.card{flex:1 1 280px;min-width:0;background:#fff;border-radius:22px;padding:32px 28px;display:flex;flex-direction:column;gap:12px}
+.card p{margin:0;font-size:15px;color:#3A3436}
+.card-no{font-family:'Shippori Mincho',serif;font-size:30px;color:#8A4D72}
+.card .card-title{font-family:'Shippori Mincho',serif;font-size:20px;letter-spacing:.12em;color:#1F1C1D}
+
+/* price */
+.price-row{display:flex;flex-wrap:wrap;gap:16px;align-items:stretch}
+.price-box{min-width:0;border-radius:20px;padding:28px 24px;text-align:center;display:flex;flex-direction:column;gap:6px}
+.price-box p{margin:0}
+.price-free{flex:1 1 220px;background:#F8F3F6;justify-content:center}
+.price-main{flex:1.4 1 300px;background:#fff;border:2px solid #8A4D72}
+.price-name{font-weight:500}
+.price-amount{font-family:'Shippori Mincho',serif;font-size:26px;color:#8A4D72}
+.price-main .price-amount{font-size:30px}
+.price-tax{font-size:14px}
+.price-badge{align-self:center;margin-top:4px!important;padding:2px 12px;border-radius:999px;background:#8A4D72;color:#fff;font-size:12px;letter-spacing:.1em}
+.price-after{font-size:13px;color:#5B5458}
+.price-terms{margin-top:10px;padding-top:12px;border-top:1px solid #EFE6EC;text-align:left;font-size:13px;color:#3A3436}
+.price-terms-title{margin:0 0 4px!important;font-weight:500;color:#8A4D72}
+.price-terms ul{margin:0;padding-left:1.2em}
+.flow{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 10px;font-size:14px}
+.flow span:not(.flow-arrow){padding:6px 16px;border-radius:999px;background:#F8F3F6}
+.flow-arrow{color:#CC88B0}
+
+/* about */
+.container-about{max-width:900px;flex-direction:row;flex-wrap:wrap;gap:48px;align-items:center}
+.profile-photo{flex:0 0 200px;height:200px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;color:#6E6469;margin:0 auto;overflow:hidden}
+.profile-photo img{width:100%;height:100%;object-fit:cover}
+.about-text{flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:14px}
+.about-text h2{margin:0;font-family:'Shippori Mincho',serif;font-weight:600;font-size:22px;letter-spacing:.16em}
+.about-name{font-size:16px;font-weight:500}
+.about-text p{margin:0;font-size:15px;line-height:2.1}
+
+/* form */
+.container-form{max-width:620px;gap:32px}
+.form-head{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.form-lead{margin:0;color:#5B5458}
+.form-box{background:#F8F3F6;border-radius:24px;padding:36px 32px;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+.form-box p{margin:0}
+.form-box-title{font-family:'Shippori Mincho',serif;font-size:18px;letter-spacing:.12em}
+.form-box-text{font-size:14px;color:#5B5458}
+.form-box-small{font-size:12px;color:#6E6469}
+
+/* footer */
+.site-footer{border-top:1px solid #EFE6EC;padding:44px 24px}
+.footer-inner{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:14px;font-size:13px;text-align:center}
+.logo-footer{height:76px;width:auto}
+.footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px}
+.footer-links a{color:#5B5458}
+.copyright{margin:0;color:#6E6469}
+
+/* mobile */
+@media (max-width:640px){
+  .hero{padding:48px 20px 64px}
+  .hero h1{font-size:34px;letter-spacing:.18em}
+  .section{padding:72px 20px}
+  .section-title{font-size:24px}
+  .header-inner{padding:10px 16px}
+  .logo-header{height:44px}
+  .main-nav{gap:6px 16px;font-size:13px}
+  .main-nav .nav-cta{padding:0 16px}
+  .form-box{padding:28px 20px}
+  .container-about{gap:28px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .slide,.carousel-dots button{transition:none}
+}
